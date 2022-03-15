@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".GenerateActivity">
+
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:background="@drawable/generate_background"
+        android:layout_centerInParent="true"
+        android:elevation="50dp"
+        >
+
+        <TextView
+            android:id="@+id/demoTV"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Your Qr Code  will appear here"
+            android:layout_marginTop="170dp"
+            android:textStyle="bold"
+            android:layout_marginStart="32dp">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/idIVQrcode"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp">
+
+        </ImageView>
+        <EditText
+            android:id="@+id/idEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Text Here"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="120dp"
+            android:textSize="20sp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/background" />
+
+        <Button
+            android:id="@+id/idBtnGenerateQR"
+            android:layout_marginTop="35dp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Generate"
+            android:textSize="17sp"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:elevation="50dp"
+            android:background="@drawable/btn_background"
+            app:backgroundTint="@color/background"/>
+    </FrameLayout>
+
+</RelativeLayout>

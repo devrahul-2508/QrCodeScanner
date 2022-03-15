@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="75dp"
+       android:layout_marginStart="30dp"
+       android:layout_marginEnd="30dp"
+       android:background="@drawable/txt_background">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="SCAN &amp; GENERATE"
+           android:textStyle="bold"
+           android:layout_marginTop="20dp"
+           android:textAlignment="center"
+           android:textSize="30sp">
+       </TextView>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Scan Qr and Bar Codes And Generate Qr codes"
+           android:textAlignment="center"
+           android:textSize="15sp"
+           android:fontFamily="@font/sourcesansprolight"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="20dp">
+
+       </TextView>
+   </LinearLayout>
+
+    <ImageView
+        android:id="@+id/splashImg"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/qrcode">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_marginTop="15dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="scan"
+        android:textSize="17sp"
+        android:layout_below="@+id/splashImg"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_background"
+        app:backgroundTint="@color/background">
+    </Button>
+    <Button
+        android:id="@+id/generateBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        android:textSize="17sp"
+        android:layout_below="@+id/scanBtn"
+        android:layout_marginTop="30dp"
+         android:layout_centerInParent="true"
+        android:background="@drawable/btn_background"
+        app:backgroundTint="@color/background">
+
+</Button>
+
+
+</RelativeLayout>
